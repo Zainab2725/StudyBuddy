@@ -1,0 +1,8 @@
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+*.pyo
+.crewai/
+studybuddy_memory.json
+.DS_Store
