@@ -1,7 +1,8 @@
 import os
 from crewai import LLM
 
-MODEL_NAME = "groq/openai/gpt-oss-120b"
+MODEL_NAME = "openai/gpt-oss-120b"
+GROQ_BASE_URL = "https://api.groq.com/openai/v1"
 
 
 def get_llm():
@@ -16,6 +17,6 @@ def get_llm():
     return LLM(
         model=MODEL_NAME,
         api_key=api_key,
-        temperature=0.2,
-        provider="groq",
+        base_url=GROQ_BASE_URL,
+        temperature=1.0,
     )
